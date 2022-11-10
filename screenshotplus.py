@@ -32,7 +32,6 @@ def setuppage():
 
 def press(event):
     # setuppage() - when first clicking, create selection box
-    print(event.x, event.y)
     global pos1x, pos1y
     pos1x = event.x
     pos1y = event.y
@@ -46,8 +45,7 @@ def move(event):
     canvas.coords(1, pos1x, pos1y, pos2x, pos2y)
 
 def pressup(event):
-    # setuppage() - let go of dragon, set values gathered
-    print(pos1x, pos1y, pos2x, pos2y)
+    # setuppage() - let go of dragging, set values gathered
     # check which corners are the start and endpoints
     if (pos1x < pos2x):
         coordxvar.set(pos1x)
@@ -87,7 +85,6 @@ def setupclick():
 
 def clickpress(event):
     # setupclick() - on click, save values
-    print(event.x, event.y)
 
     clickxvar.set(event.x)
     clickyvar.set(event.y)

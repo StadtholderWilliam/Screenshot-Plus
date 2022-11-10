@@ -5,6 +5,7 @@ Screenshot tool with automation features made in Python.
 ## Dependencies
 
 `screenshotplus.py` requires the use of `tkinter` and `pyautogui`.
+`screenshotplus.exe` can be run without anything else installed.
 
 ## Help Guide
 
